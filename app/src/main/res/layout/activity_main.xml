@@ -10,7 +10,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">>
+        android:layout_weight="3">>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="0dp"
@@ -114,7 +114,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="72dp"
+        android:padding="10dp"
         >
         <Button
             android:id="@+id/reset_button"
