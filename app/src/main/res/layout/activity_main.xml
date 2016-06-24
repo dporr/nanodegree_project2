@@ -116,6 +116,7 @@
         android:layout_weight="1"
         android:padding="10dp"
         >
+
         <Button
             android:id="@+id/reset_button"
             android:text="reset"
