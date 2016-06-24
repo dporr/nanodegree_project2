@@ -6,7 +6,6 @@
     android:paddingLeft="24dp"
     android:paddingRight="24dp"
     android:paddingTop="16dp"
-    android:paddingBottom="32dp"
     android:orientation="vertical"
     tools:context="com.example.android.courtcounter.MainActivity">
     <LinearLayout
@@ -75,7 +74,9 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray" />
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="0dp"
@@ -136,8 +137,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
         >
 
         <Button
@@ -148,6 +149,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_margin="32dp"
             />
 
     </LinearLayout>
