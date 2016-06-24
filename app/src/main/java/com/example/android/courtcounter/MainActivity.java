@@ -18,30 +18,44 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
+    /**
+     * Adds 3 points to Team A.
+     */
     public void addThreePointsA(View view){
         teamAScore +=SCORE_3_POINTS;
         displayForTeamA(teamAScore);
     }
-
+    /**
+     * Adds 2 points to Team A.
+     */
     public void addTwoPointsA(View view){
         teamAScore+=SCORE_2_POINTS;
         displayForTeamA(teamAScore);
     }
+    /**
+     * Adds 1 point to Team A.
+     */
     public void freeThrowA(View view){
         teamAScore +=SCORE_FREE_THROW;
         displayForTeamA(teamAScore);
     }
-
+    /**
+     * Adds 3 points to Team B.
+     */
     public void addThreePointsB(View view){
         teamBScore +=SCORE_3_POINTS;
         displayForTeamB(teamBScore);
     }
-
+    /**
+     * Adds 2 points to Team B.
+     */
     public void addTwoPointsB(View view){
         teamBScore+=SCORE_2_POINTS;
         displayForTeamB(teamBScore);
     }
+    /**
+     * Adds 1 point to Team B.
+     */
     public void freeThrowB(View view){
         teamBScore +=SCORE_FREE_THROW;
         displayForTeamB(teamBScore);
@@ -57,10 +71,20 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * Displays the given score for Team A.
+     * Displays the given score for Team B.
      */
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     * Resets both teams scores and cleans the view.
+     */
+    public void resetScores(View view){
+        teamAScore=0;
+        teamBScore=0;
+        displayForTeamA(teamAScore);
+        displayForTeamB(teamBScore);
     }
 }
